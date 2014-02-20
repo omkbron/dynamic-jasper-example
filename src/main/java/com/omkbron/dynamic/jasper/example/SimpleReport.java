@@ -31,6 +31,8 @@ public class SimpleReport extends BaseReport {
 		builder.addAutoText(AutoText.AUTOTEXT_PAGE_X_OF_Y, AutoText.POSITION_FOOTER, AutoText.ALIGMENT_RIGHT);
 		builder.setPrintBackgroundOnOddRows(true);
 		builder.setUseFullPageWidth(true);
+		getParams().put("paramAlgo", "la valor");
+		builder.setTemplateFile("template-report.jrxml");
 		return builder.build();
 	}
 	

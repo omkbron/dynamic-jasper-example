@@ -58,4 +58,8 @@ public abstract class BaseReport {
 	public JasperReport getJasperReport() {
 		return jasperReport;
 	}
+	
+	public Map<String, Object> getParams() {
+		return params;
+	}
 }
